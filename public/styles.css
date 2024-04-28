@@ -1,0 +1,74 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #212121; /* Dark background */
+    color: #ffffff; /* Light text */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+header, footer {
+    background-color: #333333; /* Darker header and footer */
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    width: 90%; /* Set width to 90% of the viewport width */
+    max-width: 800px; /* Limit maximum width */
+    margin: 30px auto; /* Adjusted margin */
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Fixed 4x4 grid layout */
+    grid-gap: 10px;
+    justify-items: start; /* Align the grid items to the left */
+}
+
+.cell {
+    background-color: #2b2b3d; /* Dark blueish background */
+    color: #ffffff; /* Whitish text */
+    height: 100px;
+    border: none; /* Remove default border */
+    text-align: center; /* Center text horizontally */
+    font-size: 28px; /* Increased font size */
+    border-radius: 5px; /* Add some border radius for visual appeal */
+}
+
+.buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #45a049;
+}
+
+.results {
+    margin-top: 20px;
+}
+
+.results h2 {
+    margin-bottom: 10px;
+}
+
+#resultsList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}

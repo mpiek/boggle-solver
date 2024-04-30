@@ -15,36 +15,52 @@ header, footer {
 }
 
 .container {
-    width: 90%; /* Set width to 90% of the viewport width */
-    max-width: 800px; /* Limit maximum width */
-    margin: 30px auto; /* Adjusted margin */
-    padding: 20px;
+    display: grid;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: space-around;
+    height: 100vh;
+    padding-top: 20px;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Fixed 4x4 grid layout */
+    grid-template-rows: repeat(4, 1fr); /* Added this line */
     grid-gap: 10px;
     justify-items: start; /* Align the grid items to the left */
 }
 
+.buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    width: 100%; /* Take up full width */
+    padding: 10px 0; /* Add some vertical padding */
+}
+
+.results {
+    width: 100%;
+    max-width: 800px;
+}
+
+
 .cell {
     background-color: #2b2b3d; /* Dark blueish background */
     color: #ffffff; /* Whitish text */
-    height: 100px;
+    height: 20vw; /* Adjust as needed */
+    width: 20vw; /* Adjust as needed */
+    max-width: 250px;
+    max-height: 250px;
     border: none; /* Remove default border */
     text-align: center; /* Center text horizontally */
-    font-size: 28px; /* Increased font size */
+    font-size: 10vw; /* Increased font size */
     border-radius: 5px; /* Add some border radius for visual appeal */
 }
 
-.buttons {
-    margin-top: 20px;
-    text-align: center;
-}
+
 
 .buttons button {
-    padding: 10px 20px;
+    padding: 40px 80px;
     margin: 0 10px;
     font-size: 16px;
     background-color: #4CAF50;
@@ -57,10 +73,6 @@ header, footer {
 
 .buttons button:hover {
     background-color: #45a049;
-}
-
-.results {
-    margin-top: 20px;
 }
 
 .results h2 {
